@@ -11,8 +11,8 @@ From this roster, specific survey modules are assigned to eligible individuals:
 - Biomarker Questionnaire: Conducted for children and women it collects physical measurements like height, weight, and hemoglobin levels to assess nutritional status and anemia.
 This health survey organize data collection by grouping questionnaire modules according to the demographic and health characteristics of specific household members. 
 
-- **Total Questions:** 403
-- **Choice Lists:** 152
+**Total Questions:** 403
+**Choice Lists:** 152
 
 ## Survey description
 
@@ -25,8 +25,7 @@ Conditional questionnaire begin with the selection of a member and ends blocks w
 Survey logic in KoBoToolbox can become unstable or fail to update correctly when users navigate backward to edit previous answers, particularly when using complex loops. 
 This often results in questions not appearing, options remaining empty, or validation errors triggering only at the end of the survey rather than in real-time.
 For this survey interviewee must be trained to follow exact flow of the survey entering household member information as this section generates conditional lists.
-Loop sections begin with the selection of a list-member and ends with the option to add another questionnaire.   
-!!!
+Loop sections begin with the selection of a list-member and ends with the option to add another questionnaire.   !!!
 
 The survey is organized into the following main sections:
 
