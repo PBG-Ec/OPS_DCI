@@ -1,10 +1,10 @@
 # Child Malnutrition Health Survey  
 
 ## Overview
-This repository contains an XLSForm structure for the health survey, following DHS Model Questionnaires for household members, household data, child and mothers questionnaire tocpics.
+This repository contains an XLSForm structure for the health survey, following DHS Model Questionnaires for household members, household data, child and mother's questionnaire topics.
 It includes conditional loop structure to generate survey block according to household members characteristics such age, sex and other filters. 
 
-This Health Surveys example qutomatically genrates structure data collection by organizing questionnaires based on the characteristics of household members. The Demographic and Health Surveys (DHS) begin with a Household Questionnaire that records key details—such as age, sex, education, and relationship to the head of household—for all usual residents and visitors.
+This Health Surveys example automatically generates structure data collection by organizing questionnaires based on the characteristics of household members. The Demographic and Health Surveys (DHS) begin with a Household Questionnaire that records key details—such as age, sex, education, and relationship to the head of household—for all usual residents and visitors.
 From this roster, specific survey modules are assigned to eligible individuals:
 - Women’s Questionnaire: Administered to women aged 15–49, it gathers detailed information on reproductive history, contraceptive use, antenatal and postnatal care, breastfeeding, and women's empowerment.
 - Child’s Questionnaire: Administered to children under 2 yo: growth and development monitoring of children under 2 years of age: immunizations, childhood diseases, child development centers and daycare, motor development, language milestones (>1 yo)
@@ -16,16 +16,19 @@ This health survey organize data collection by grouping questionnaire modules ac
 
 ## Survey description
 
-The variables of interest collected in the survey focused on measurements of the nutritional status of the described population—primarily chronic malnutrition and iron-deficiency anemia, in addition to others linked to social determinants and demographic information. Likewise, information was gathered on child development and its determinants, such as household conditions and maternal healthcare during pregnancy, as well as relevant indicators regarding healthcare for children from birth and for mothers during pregnancy. Aside from these research variables, indicators for breastfeeding and motor development in children were also measured.
+The variables of interest collected in the survey focused on measurements of the nutritional status of the described population—primarily chronic malnutrition and iron-deficiency anemia, in addition to others linked to social determinants and demographic information. Likewise, information was gathered on child development and its determinants, such as household conditions and maternal healthcare during pregnancy, as well as relevant indicators regarding healthcare for children from birth and for mothers during pregnancy. 
+Aside from these research variables, indicators for breastfeeding and motor development in children were also measured.
+
 Roster are generated when entering hh members data for specific groups (adults, child, mothers, under 2 yo child).
 Conditional questionnaire begin with the selection of a member and ends blocks with a choice to include data from another member of the list. 
 
 ### Survey structure:
-!!!
-Survey logic in KoBoToolbox can become unstable or fail to update correctly when users navigate backward to edit previous answers, particularly when using complex loops. 
-This often results in questions not appearing, options remaining empty, or validation errors triggering only at the end of the survey rather than in real-time.
-For this survey interviewee must be trained to follow exact flow of the survey entering household member information as this section generates conditional lists.
-Loop sections begin with the selection of a list-member and ends with the option to add another questionnaire.   !!!
+ 
+**!!! Survey logic in KoBoToolbox can become unstable or fail to update correctly when users navigate backward to edit previous answers, particularly when using complex loops. 
+This often results in questions not appearing, options remaining empty, or validation errors triggering only at the end of the survey rather than in real-time.**
+
+**For this survey interviewee must be trained to follow exact flow of the survey entering household member information as this section generates conditional lists.
+Loop sections begin with the selection of a list-member and ends with the option to add another questionnaire.!!!**  
 
 The survey is organized into the following main sections:
 
